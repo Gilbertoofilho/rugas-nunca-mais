@@ -2,6 +2,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>
+
+document.addEventListener("keydown", function (e) {
+
+if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) { // Prevent F12
+
+e.preventDefault()
+
+}
+
+}, true);
+
+document.addEventListener('contextmenu', function (e) {
+
+e.preventDefault()
+
+}, true);
+
+</script>
 	<meta charset="UTF-8">
 		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
